@@ -1,0 +1,47 @@
+<div>
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 2rem;">
+        <div class="col-12">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Tipo documento</th>
+                <th scope="col">documento</th>
+                <th scope="col">ciudad</th>
+
+                <th></th>
+    
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of usuarios">
+                <td>{{user.nombres}}</td>
+                <td>{{user.apellidos}}</td>
+                <td>{{user.doc}}</td>
+                <td>{{user.documento}}</td>
+                <td>{{user.lugar_residencia}}</td>
+                <button type="button" class="btn btn-primary"  style="background-color: #008080;"  (click)="eliminar(user)">Eliminar usuario</button>
+
+
+    
+    
+              </tr>
+    
+    
+            </tbody>
+          </table>
+  
+        </div>
+  
+  
+        
+        
+  
+  
+  
+      </div>
+  
+    </div>
+  </div>

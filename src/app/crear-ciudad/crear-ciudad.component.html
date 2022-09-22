@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row" style="margin-top: 1rem;">
+        <h3 style="text-align: center;">Crear ciudad</h3>
+
+        <form (ngSubmit)="crearUsuario()" id="crear" enctype="multipart/form-data">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" [(ngModel)]="ciudad.nombre" [ngModelOptions]="{standalone:true}"
+                        placeholder="Nombre" class="form-control" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="text" [(ngModel)]="ciudad.descripcion" [ngModelOptions]="{standalone:true}"
+                        placeholder="Descripcion" class="form-control" required>
+                </div>
+            </div>
+
+
+
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <input class="btn btn-primary" style="background-color:#008080 ;" type="submit" value="Crear ciudad">
+                </div>
+            </div>
+            <div><br></div>
+        </form>
+
+
+
+    </div>
+
+</div>

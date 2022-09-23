@@ -7,9 +7,7 @@
               <tr>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
-                <th scope="col">Tipo documento</th>
                 <th scope="col">documento</th>
-                <th scope="col">ciudad</th>
 
                 <th></th>
     
@@ -19,9 +17,7 @@
               <tr *ngFor="let user of usuarios">
                 <td>{{user.nombres}}</td>
                 <td>{{user.apellidos}}</td>
-                <td>{{user.doc}}</td>
                 <td>{{user.documento}}</td>
-                <td>{{user.lugar_residencia}}</td>
                 <button type="button" class="btn btn-primary"  style="background-color: #008080;"  (click)="eliminar(user)">Eliminar usuario</button>
 
 

@@ -41,7 +41,6 @@ export class UsuarioComponent implements OnInit {
     this.api.eliminarUsuario().subscribe();
     console.log("Usuario eliminado")
     alert("Usuario eliminado exitosamente.");
-    location.href=""
   }
 
 }

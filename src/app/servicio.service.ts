@@ -47,7 +47,9 @@ export class ServicioService {
     return this.http.get(`http://localhost:8080/usuario/buscar/` + sessionStorage.getItem("userID"))
   }
   eliminarUsuario(): Observable<{}> {
-    return this.http.delete<{}>(`http://localhost:8080/personas/delete/` + sessionStorage.getItem("userID"))
+    console.log(`http://localhost:8080/personas/eliminar/` + sessionStorage.getItem("userID"))
+
+    return this.http.delete<{}>(`http://localhost:8080/personas/eliminar/` + sessionStorage.getItem("userID"))
   }
 
 }
